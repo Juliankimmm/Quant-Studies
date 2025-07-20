@@ -102,8 +102,8 @@ Assigned regimes by clustering features like returns, volatility, moving average
 ```
 quant-strategies/
 │
-├── quant2.py              # Grid Search SMA strategy
-├── regime_switching_strategy.py          # GMM-based strategy
+├── quant_start.py              # Grid Search SMA strategy
+├── regime_switching_strat.py          # GMM-based strategy
 ├── rsi_strat.py             # RSI + Bayesian Optimization
 ├── README.md                    # Learning summary and documentation
 ```
