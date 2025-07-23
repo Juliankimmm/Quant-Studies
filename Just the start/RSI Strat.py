@@ -34,10 +34,6 @@ def backtest(data, rsi_buy, rsi_sell):
         price = float(data['Close'].iat[i])
         rsi = float(data['RSI'].iat[i])
 
-        # Uncomment below to debug trades:
-        # if i % 100 == 0:
-        #     print(f"Index {i} Price={price:.2f} RSI={rsi:.2f} Cash={cash:.2f} Pos={position:.4f}")
-
         if rsi < rsi_buy and cash > 0:
             position = cash / price
             cash = 0
